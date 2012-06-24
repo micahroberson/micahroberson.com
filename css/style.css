@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'League Gothic';
+  src: url('fonts/league_ghotic_extended-webfont.eot?') format('eot'),
+        url('fonts/league_ghotic_extended-webfont.woff') format('woff'),
+        url('fonts/league_ghotic_extended-webfont.ttf') format('truetype'),
+        url('fonts/league_ghotic_extended-webfont.svg#webfontJks7As9d') format('svg');
+  font-family: 'Novecentowide';
+  src: url('fonts/Novecentowide-Normal-webfont.eot') format('eot'),
+        url('fonts/Novecentowide-Normal-webfont.woff') format('woff'),
+        url('fonts/Novecentowide-Normal-webfont.ttf') format('truetype'),
+        url('fonts/Novecentowide-Normal-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: Novecentowide, Arial, san-serif;
+  background: #eee url('../img/noise.png') repeat fixed;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#backtotop {
+  top:10px;
+  right: 35px;
+  display: none;
+  position: fixed;
+  width: 50px;
+  cursor: pointer;
+  cursor: hand;
+  background: rgba(0, 0, 0, .5);
+  color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 3px;
+  text-align: center;
+}
+
+.section1 {
+  margin-top: 80px;
+  margin-bottom: 250px;
+}
+
+.resume {
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.work {
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.contact {
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.logo {
+  background: transparent url('../img/logo_1.4_medium.png') no-repeat;
+  height: 133px;
+  width: 133px;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.intro ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.intro ul li {
+  display: inline;
+}
+
+.intro ul li a {
+  text-decoration: none;
+  margin: 0 30px;
+  color: #474747;
+}
+
+.navbar-inner {
+  min-height: 80px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #fff;
+  background-image: -moz-linear-gradient(top, #fff, #fafafa);
+  background-image: -ms-linear-gradient(top, #fff, #fafafa);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#fafafa));
+  background-image: -webkit-linear-gradient(top, #fff, #fafafa);
+  background-image: -o-linear-gradient(top, #fff, #fafafa);
+  background-image: linear-gradient(top, #fff, #fafafa);
+  background-repeat: repeat-x;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar .brand {
+  margin-left: -10px;
+}
+
+.navbar::before, .navbar::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -ms-transform: skew(-3deg, -2deg);
+  -webkit-transform: skew(-3deg, -2deg);
+  -o-transform: skew(-3deg, -2deg);
+  -moz-transform: skew(-3deg, -2deg);
+  top: 20px;
+  box-shadow: 0 15px 5px 0 
+  rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 15px 5px 0 
+  rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.15);
+  height: 50px;
+  left: 3px;
+  max-width: 50%;
+  width: 51%;
+}
+
+.navbar::after {
+  -ms-transform: skew(3deg, 2deg);
+  -webkit-transform: skew(3deg, 2deg);
+  -o-transform: skew(3deg, 2deg);
+  -moz-transform: skew(3deg, 2deg);
+  left: auto;
+  right: 3px;
+}
+
+.navbar .nav > li > a {
+  float: none;
+  padding: 9px 10px 11px;
+  line-height: 19px;
+  color: #474747;
+  text-decoration: none;
+  font-size: 1.4em;
+  text-shadow: 0 0 1px black;
+  text-transform: uppercase;
+}
+
+.navbar .nav > li > a:hover {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
