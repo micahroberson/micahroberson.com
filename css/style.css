@@ -18,6 +18,11 @@ html, body {
   background: #eee url('../img/noise.png') repeat fixed;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #EB8D01;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -56,6 +61,11 @@ body {
 
 .work {
   padding-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work img {
   margin: 0 auto;
 }
 
