@@ -37,3 +37,11 @@ const subheaderStyle = css({
   fontSize: 18,
   margin: '0 0 10px',
 })
+
+// <img src="/static/headshot.png" className={headshotStyle} />
+const headshotStyle = css({
+  display: 'block',
+  margin: '0 auto 30px',
+  maxWidth: '72px',
+  userSelect: 'none',
+})
