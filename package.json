@@ -1,0 +1,14 @@
+{
+  "name": "micahroberson.com",
+  "version": "0.0.1",
+  "description": "A personal website for Micah Roberson.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "author": "Micah Roberson",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^1.2.3"
+  }
+}
