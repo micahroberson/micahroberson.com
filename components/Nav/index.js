@@ -81,6 +81,10 @@ css.global('p', {
   fontWeight: 400,
 })
 
+css.global('strong', {
+  fontWeight: '500 !important',
+})
+
 const navStyle = css({
   padding: '15px 20px',
   marginBottom: '100px',
