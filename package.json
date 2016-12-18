@@ -4,7 +4,9 @@
   "description": "A personal website for Micah Roberson.",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "author": "Micah Roberson",
   "license": "MIT",
