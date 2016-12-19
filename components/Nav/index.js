@@ -43,7 +43,7 @@ export default class Nav extends React.Component {
           <ul className={listStyle}>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/work">Work</Link></li>
-            <li><a href="/static/Micah Roberson Resumé.pdf">Resumé</a></li>
+            <li><a href="/static/Micah Roberson Resume.pdf">Resumé</a></li>
           </ul>
         </div>
       </nav>

@@ -10,7 +10,7 @@ export default () => {
       <span>•</span>
       <Link href="/work">Work</Link>
       <span>•</span>
-      <a href="/static/Micah Roberson Resumé.pdf">Resumé</a>
+      <a href="/static/Micah Roberson Resume.pdf">Resumé</a>
       <p>micahroberson.com</p>
     </footer>
   )
