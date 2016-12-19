@@ -19,6 +19,7 @@ export default () => {
         <title>Micah Roberson</title>
         <link rel="icon" type="image/png" href="/static/favicon.png" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="canonical" href="http://micahroberson.com" />
       </Head>
       <div className={containerStyle}>
         <h1 className={h1Style}>Micah Roberson</h1>
