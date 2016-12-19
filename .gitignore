@@ -2,3 +2,4 @@ node_modules
 .next
 micahroberson.com.csr
 micahroberson.com.key
+npm-debug.log
