@@ -16,7 +16,8 @@ export default () => {
   return (
     <div>
       <Head>
-        <title>Micah Roberson</title>
+        <title>Micah Roberson – Software Engineer</title>
+        <meta charset="utf-8" />
         <link rel="icon" type="image/png" href="/static/favicon.png" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="canonical" href="http://micahroberson.com" />
