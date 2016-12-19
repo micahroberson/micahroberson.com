@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 
 # Install dependencies
 COPY package.json /usr/src/app/
-RUN npm install
+RUN npm cache clean; npm install
 
 # Add the rest of the repository
 ADD . /usr/src/app
