@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "A personal website for Micah Roberson.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/micahroberson/micahroberson.com"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
