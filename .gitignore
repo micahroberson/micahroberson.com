@@ -1,5 +1,4 @@
 node_modules
 .next
-micahroberson.com.csr
-micahroberson.com.key
+dist
 npm-debug.log
