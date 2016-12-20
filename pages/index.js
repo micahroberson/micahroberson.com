@@ -13,8 +13,8 @@ export default () => {
         <meta name="author" content="Micah Roberson" />
         <meta name="description" content="A software engineer in San Francisco, specializing in rich JavaScript applications." />
         <meta property="og:description" content="A software engineer in San Francisco, specializing in rich JavaScript applications." />
-        <link rel="canonical" href="http://micahroberson.com" />
-        <meta property="og:url" content="http://micahroberson.com" />
+        <link rel="canonical" href="https://micahroberson.com" />
+        <meta property="og:url" content="https://micahroberson.com" />
       </Head>
       <section className={sectionStyle}>
         <h1 className={h1Style}>Micah Roberson</h1>
