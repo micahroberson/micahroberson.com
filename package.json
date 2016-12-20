@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start"
   },
   "author": "Micah Roberson",
   "license": "MIT",
