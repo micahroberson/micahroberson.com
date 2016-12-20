@@ -2,77 +2,86 @@ import Head from 'next/head'
 import css, { select } from 'next/css'
 
 export default () => {
-  let links = (
-    <ul className={linksListStyle}>
-      <li><a href="mailto:micah.roberson@gmail.com" target="_blank">Email</a></li>
-      <li><span>•</span></li>
-      <li><a href="https://github.com/micahroberson" target="_blank">Github</a></li>
-      <li><span>•</span></li>
-      <li><a href="https://twitter.com/micahroberson" target="_blank">Twitter</a></li>
-      <li><span>•</span></li>
-      <li><a href="/static/Micah Roberson Resume.pdf" target="_blank">Download Résumé</a></li>
-    </ul>
-  );
   return (
-    <div>
+    <div className={containerStyle}>
       <Head>
         <title>Micah Roberson – Software Engineer</title>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/png" href="/static/favicon.png" />
+        <meta property="og:title" content="Micah Roberson – Software Engineer" />
+        <meta charSet="utf-8" />
+        <link rel="shortcut icon" type="image/png" href="/static/favicon.png" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="author" content="Micah Roberson" />
+        <meta name="description" content="A software engineer in San Francisco, specializing in rich JavaScript applications." />
+        <meta property="og:description" content="A software engineer in San Francisco, specializing in rich JavaScript applications." />
         <link rel="canonical" href="http://micahroberson.com" />
+        <meta property="og:url" content="http://micahroberson.com" />
       </Head>
-      <div className={containerStyle}>
+      <section className={sectionStyle}>
         <h1 className={h1Style}>Micah Roberson</h1>
         <h2 className={h2Style}>A software engineer in San Francisco, specializing in rich JavaScript applications.</h2>
-        {links}
-        <div className={css(spacer1Style)} />
+        <ul className={linksListStyle}>
+          <li><a href="mailto:micah.roberson@gmail.com" target="_blank">Email</a></li>
+          <li><span>•</span></li>
+          <li><a href="https://github.com/micahroberson" target="_blank">GitHub</a></li>
+          <li><span>•</span></li>
+          <li><a href="https://twitter.com/micahroberson" target="_blank">Twitter</a></li>
+          <li><span>•</span></li>
+          <li><a href="/static/Micah Roberson Resume.pdf" target="_blank">Download Résumé</a></li>
+        </ul>
+      </section>
+      <section className={sectionStyle}>
         <h3 className={h3Style}>About</h3>
-        <div className={lineStyle} />
         <p>I’m an experienced full-stack software engineer and self-directed owner, with a knack for interdisciplinary communication.</p>
-        <p>Having spent time at both large, established corporations and small, scrappy startups, I’ve developed the perspective and skills necesary to balance technical debt with business goals, design constraints and timely shipments.</p>
+        <p>Having spent time at both large, established corporations and small, early-stage startups, I’ve developed the perspective and skills necesary to balance technical debt with business goals, design constraints and timely shipments.</p>
         <p>I’ve started, contributed to, shipped and maintained projects and products across the spectrum: from monolithic Rails apps running on Heroku to large-scale, service-oriented architectures on AWS. While a significant portion of my career hours have been spent building backend services in various languages, my real passion is rich, frontend JavaScript apps. I’ve spent the majority of the past two years building and scaling up universal, server-rendered React web apps based on the Flux architecture.</p>
-        <div className={css(spacer2Style)} />
+      </section>
+      <section className={sectionStyle}>
         <h3 className={h3Style}>Work Experience</h3>
-        <div className={lineStyle} />
-        <div className={workContainerStyle}>
-          <div className={workRowStyle}>
+        <ol className={workListStyle}>
+          <li className={workListItemStyle}>
             <span className={workRowCompanyNameStyle}>Delectable&nbsp;&nbsp;</span>
             <span className={workRowTitleStyle}>/&nbsp;&nbsp;Senior Software Engineer</span>
             <span className={workRowDateStyle}>Jan 2015 - Present</span>
-          </div>
-          <div className={lineStyle} />
-          <div className={workRowStyle}>
+          </li>
+          <li className={workListItemStyle}>
             <span className={workRowCompanyNameStyle}>RAD Development&nbsp;&nbsp;</span>
             <span className={workRowTitleStyle}>/&nbsp;&nbsp;Co-Founder & CTO</span>
             <span className={workRowDateStyle}>May 2012 - Jan 2015</span>
-          </div>
-          <div className={lineStyle} />
-          <div className={workRowStyle}>
+          </li>
+          <li className={workListItemStyle}>
             <span className={workRowCompanyNameStyle}>Arkad&nbsp;&nbsp;</span>
             <span className={workRowTitleStyle}>/&nbsp;&nbsp;Co-Founder & Lead Engineer</span>
             <span className={workRowDateStyle}>April 2012 - May 2013</span>
-          </div>
-          <div className={lineStyle} />
-          <div className={workRowStyle}>
+          </li>
+          <li className={workListItemStyle}>
             <span className={workRowCompanyNameStyle}>Bloomberg&nbsp;&nbsp;</span>
             <span className={workRowTitleStyle}>/&nbsp;&nbsp;Financial Software Developer</span>
             <span className={workRowDateStyle}>May 2011 - May 2012</span>
-          </div>
-          <div className={lineStyle} />
-          <div className={workRowStyle}>
+          </li>
+          <li className={workListItemStyle}>
             <span className={workRowCompanyNameStyle}>American Express&nbsp;&nbsp;</span>
             <span className={workRowTitleStyle}>/&nbsp;&nbsp;Technical Analyst</span>
             <span className={workRowDateStyle}>June 2010 - April 2011</span>
+          </li>
+        </ol>
+      </section>
+      <footer className={footerStyle}>
+        <section className={sectionStyle}>
+          <div className={footerNameAndTitleStyle}>
+            <span>Micah Roberson</span>
+            <span style={{color: 'rgba(255,255,255,0.4)'}}>Software Engineer</span>
           </div>
-        </div>
-        <div className={css(spacer2Style)} />
-      </div>
-      <div className={lineStyle} />
-      <div className={bottomLinksWrapper}>
-        {links}
-      </div>
-      <div className={css(spacer1Style)} />
+          <ul className={linksListStyle}>
+            <li><a href="mailto:micah.roberson@gmail.com" target="_blank">Email</a></li>
+            <li><span>•</span></li>
+            <li><a href="https://github.com/micahroberson" target="_blank">GitHub</a></li>
+            <li><span>•</span></li>
+            <li><a href="https://twitter.com/micahroberson" target="_blank">Twitter</a></li>
+            <li><span>•</span></li>
+            <li><a href="/static/Micah Roberson Resume.pdf" target="_blank">Download Résumé</a></li>
+          </ul>
+        </section>
+      </footer>
       <script dangerouslySetInnerHTML={{__html: `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -85,19 +94,14 @@ export default () => {
 }
 
 css.global('body', {
+  margin: 0,
+  padding: 0,
   fontFamily: '-apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif',
   backgroundColor: '#111111',
   color: '#ffffff',
   fontSize: 16,
   textRendering: 'optimizelegibility',
   WebkitFontSmoothing: 'antialiased',
-})
-
-css.global('section', {
-  maxWidth: 620,
-  margin: '0 auto',
-  padding: '0 20px 80px',
-  minHeight: 600,
 })
 
 css.global('p', {
@@ -108,17 +112,29 @@ css.global('p', {
   fontWeight: 400,
 })
 
-css.global('strong', {
-  fontWeight: '500 !important',
-})
 
 const containerStyle = css({
+  margin: '0 auto',
+  padding: '274px 0 185px',
+  '@media (max-width: 600px)': {
+    padding: '100px 0 100px',
+  },
+}, select('> section:nth-child(1), > section:nth-child(3)', {
+  marginBottom: '154px',
+  '@media (max-width: 600px)': {
+    marginBottom: '100px',
+  },
+}), select('> section:nth-child(2)', {
+  marginBottom: '100px',
+  '@media (max-width: 600px)': {
+    marginBottom: '80px',
+  },
+}))
+
+const sectionStyle = css({
   maxWidth: 780,
   margin: '0 auto',
-  padding: '274px 20px 185px',
-  '@media (max-width: 600px)': {
-    padding: '100px 20px 100px',
-  }
+  padding: '0 20px',
 })
 
 const h1Style = css({
@@ -149,18 +165,39 @@ const h3Style = css({
   lineHeight: '44px',
   letterSpacing: '2px',
   textTransform: 'uppercase',
-  opacity: 0.4,
+  color: 'rgba(255,255,255,0.4)',
+  margin: '0 0 21px',
+  padding: '0 0 20px',
+  borderBottom: '1px solid rgba(255,255,255,0.12)',
   '@media (max-width: 600px)': {
-    fontSize: 12,
     lineHeight: '38px',
   }
 })
 
-const bottomLinksWrapper = css({
-  maxWidth: 740,
-  margin: '0 auto',
-  padding: '0 20px',
-})
+const footerStyle = css({
+  margin: '21px 0 0',
+  padding: '61px 0 0',
+  borderTop: '1px solid rgba(255,255,255,0.12)',
+}, select('> section', {
+  ':after': {
+    content: '""',
+    display: 'table',
+    clear: 'both',
+  },
+}), select('> section > ul', {
+  float: 'right',
+  marginTop: '23px',
+  '@media (max-width: 600px)': {
+    float: 'left',
+  },
+}))
+
+const footerNameAndTitleStyle = css({
+  float: 'left',
+  lineHeight: '30px',
+}, select('> span', {
+  display: 'block',
+}))
 
 const linksListStyle = css({
   lineHeight: '44px',
@@ -190,33 +227,20 @@ const linksListStyle = css({
   },
 }))
 
-const spacer1Style = css({
-  height: 154,
-  '@media (max-width: 600px)': {
-    height: 100,
-  }
+const workListStyle = css({
+  listStyle: 'none',
+  margin: 0,
+  padding: 0,
 })
 
-const spacer2Style = css({
-  height: 100,
-  '@media (max-width: 600px)': {
-    height: 80,
-  }
-})
-
-const lineStyle = css({
-  borderBottom: '1px solid #ffffff',
-  opacity: 0.12,
-  margin: '0 0 21px',
-})
-
-const workContainerStyle = css({
-
-})
-
-const workRowStyle = css({
+const workListItemStyle = css({
   fontSize: 20,
+  padding: '0 0 21px',
   marginBottom: '21px',
+  borderBottom: '1px solid rgba(255,255,255,0.12)',
+  ':last-child': {
+    borderBottom: 0,
+  },
   ':after': {
     content: '""',
     display: 'table',
