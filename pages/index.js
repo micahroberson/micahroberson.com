@@ -31,9 +31,10 @@ export default () => {
       </section>
       <section className={sectionStyle}>
         <h3 className={h3Style}>About</h3>
-        <p>I’m an experienced full-stack software engineer and self-directed owner, with a knack for interdisciplinary communication.</p>
-        <p>Having spent time at both large, established corporations and small, early-stage startups, I’ve developed the perspective and skills necesary to balance technical debt with business goals, design constraints and timely shipments.</p>
-        <p>I’ve started, contributed to, shipped and maintained projects and products across the spectrum: from monolithic Rails apps running on Heroku to large-scale, service-oriented architectures on AWS. While a significant portion of my career hours have been spent building backend services in various languages, my real passion is rich, frontend JavaScript apps. I’ve spent the majority of the past two years building and scaling up universal, server-rendered React web apps based on the Flux architecture.</p>
+        <p>I’m an experienced full-stack software engineer and self-directed owner, with a passion for delivering beautiful, intuitive user experiences.</p>
+        <p>Having worked at both large, established corporations and small, early-stage startups, I've experienced a variety of engineering cultures and environments. Through this, I’ve developed the perspective and skills necessary to effectively communicate and collaborate cross-functionally.</p>
+        <p>I’ve started, contributed to, shipped and maintained projects and products across the spectrum: from monolithic Rails apps to large-scale, service-oriented architectures.</p>
+        <p>I’ve spent the past two years building, scaling and polishing React web apps at Delectable.</p>
       </section>
       <section className={sectionStyle}>
         <h3 className={h3Style}>Work Experience</h3>
