@@ -89,6 +89,8 @@ css.global('body', {
   backgroundColor: '#111111',
   color: '#ffffff',
   fontSize: 16,
+  textRendering: 'optimizelegibility',
+  WebkitFontSmoothing: 'antialiased',
 })
 
 css.global('section', {
@@ -96,17 +98,6 @@ css.global('section', {
   margin: '0 auto',
   padding: '0 20px 80px',
   minHeight: 600,
-})
-
-css.global('a', {
-  color: 'rgba(255,255,255,0.7)',
-  textDecoration: 'underline',
-  ':active': {
-    color: 'rgba(255,255,255,0.7)',
-  },
-  ':hover': {
-    color: 'rgba(255,255,255,0.85)',
-  }
 })
 
 css.global('p', {
@@ -186,6 +177,17 @@ const linksListStyle = css({
   color: 'rgba(255,255,255,0.7)',
   fontSize: 10,
   verticalAlign: 'bottom',
+}), select('> li > a', {
+  color: 'rgba(255,255,255,0.7)',
+  textDecoration: 'underline',
+  '@media (min-width: 769px)': {
+    ':active': {
+      color: 'rgba(255,255,255,0.7)',
+    },
+    ':hover': {
+      color: 'rgba(255,255,255,1.0)',
+    }
+  },
 }))
 
 const spacer1Style = css({
