@@ -9,7 +9,7 @@ export default () => {
         <meta property="og:title" content="Micah Roberson – Software Engineer" />
         <meta charSet="utf-8" />
         <link rel="shortcut icon" type="image/png" href="/static/favicon.png" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
         <meta name="author" content="Micah Roberson" />
         <meta name="description" content="A software engineer in San Francisco, specializing in rich JavaScript applications." />
         <meta property="og:description" content="A software engineer in San Francisco, specializing in rich JavaScript applications." />
@@ -70,7 +70,7 @@ export default () => {
         <section className={sectionStyle}>
           <div className={footerNameAndTitleStyle}>
             <span>Micah Roberson</span>
-            <span style={{color: 'rgba(255,255,255,0.4)'}}>Software Engineer</span>
+            <span className={titleStyle}>Software Engineer</span>
           </div>
           <ul className={linksListStyle}>
             <li><a href="mailto:micah.roberson@gmail.com" target="_blank">Email</a></li>
@@ -192,6 +192,10 @@ const footerNameAndTitleStyle = css({
 }, select('> span', {
   display: 'block',
 }))
+
+const titleStyle = css({
+  color: 'rgba(255,255,255,0.4)',
+})
 
 const linksListStyle = css({
   lineHeight: '44px',
