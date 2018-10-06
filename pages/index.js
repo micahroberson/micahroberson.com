@@ -34,15 +34,19 @@ export default () => {
         <p>I’m an experienced full-stack software engineer and self-directed owner, with a passion for delivering beautiful, intuitive user experiences.</p>
         <p>Having worked at both large, established corporations and small, early-stage startups, I've experienced a variety of engineering cultures and environments. Through this, I’ve developed the perspective and skills necessary to effectively communicate and collaborate cross-functionally.</p>
         <p>I’ve started, contributed to, shipped and maintained projects and products across the spectrum: from monolithic Rails apps to large-scale, service-oriented architectures.</p>
-        <p>I’ve spent the past two years building, scaling and polishing React web apps at Delectable.</p>
       </section>
       <section className={sectionStyle}>
         <h3 className={h3Style}>Work Experience</h3>
         <ol className={workListStyle}>
           <li className={workListItemStyle}>
+            <span className={workRowCompanyNameStyle}>Dropbox&nbsp;&nbsp;</span>
+            <span className={workRowTitleStyle}>/&nbsp;&nbsp;Software Engineer</span>
+            <span className={workRowDateStyle}>Mar 2017 - Present</span>
+          </li>
+          <li className={workListItemStyle}>
             <span className={workRowCompanyNameStyle}>Delectable&nbsp;&nbsp;</span>
-            <span className={workRowTitleStyle}>/&nbsp;&nbsp;Senior Software Engineer</span>
-            <span className={workRowDateStyle}>Jan 2015 - Present</span>
+            <span className={workRowTitleStyle}>/&nbsp;&nbsp;Software Engineer</span>
+            <span className={workRowDateStyle}>Jan 2015 - Mar 2017</span>
           </li>
           <li className={workListItemStyle}>
             <span className={workRowCompanyNameStyle}>RAD Development&nbsp;&nbsp;</span>
