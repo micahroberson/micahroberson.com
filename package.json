@@ -15,6 +15,8 @@
   "author": "Micah Roberson",
   "license": "MIT",
   "dependencies": {
-    "next": "^1.2.3"
+    "next": "9.1.3",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   }
 }
