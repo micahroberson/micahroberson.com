@@ -1,45 +1,85 @@
-import Head from 'next/head';
+import Head from "next/head";
 
 export default () => {
   return (
     <div className="container">
       <Head>
         <title>Micah Roberson – Software Engineer</title>
-        <meta property="og:title" content="Micah Roberson – Software Engineer" />
+        <meta
+          property="og:title"
+          content="Micah Roberson – Software Engineer"
+        />
         <meta charSet="utf-8" />
         <link rel="shortcut icon" type="image/png" href="/static/favicon.png" />
-        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width,minimum-scale=1,initial-scale=1"
+        />
         <meta name="author" content="Micah Roberson" />
-        <meta name="description" content="A software engineer in San Francisco, specializing in rich JavaScript applications." />
-        <meta property="og:description" content="A software engineer in San Francisco, specializing in rich JavaScript applications." />
+        <meta
+          name="description"
+          content="A software engineer in San Francisco, specializing in rich JavaScript applications."
+        />
+        <meta
+          property="og:description"
+          content="A software engineer in San Francisco, specializing in rich JavaScript applications."
+        />
         <link rel="canonical" href="https://micahroberson.com" />
         <meta property="og:url" content="https://micahroberson.com" />
       </Head>
       <section className="section">
         <h1 className="h1">Micah Roberson</h1>
-        <h2 className="h2">A software engineer in San Francisco, specializing in rich JavaScript applications.</h2>
+        <h2 className="h2">
+          A software engineer in San Francisco, specializing in rich JavaScript
+          applications.
+        </h2>
         <ul className="links">
-          <li><a href="mailto:micah.roberson@gmail.com" target="_blank">Email</a></li>
-          <li><span>•</span></li>
-          <li><a href="https://github.com/micahroberson" target="_blank">GitHub</a></li>
-          <li><span>•</span></li>
-          <li><a href="https://twitter.com/micahroberson" target="_blank">Twitter</a></li>
-          <li><span>•</span></li>
-          <li><a href="/static/Micah Roberson Resume.pdf" target="_blank">Download Résumé</a></li>
+          <li>
+            <a href="mailto:micah.roberson@gmail.com" target="_blank">
+              Email
+            </a>
+          </li>
+          <li>
+            <span>•</span>
+          </li>
+          <li>
+            <a href="https://github.com/micahroberson" target="_blank">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <span>•</span>
+          </li>
+          <li>
+            <a href="/static/Micah Roberson Resume.pdf" target="_blank">
+              Download Résumé
+            </a>
+          </li>
         </ul>
       </section>
       <section className="section">
         <h3 className="h3">About</h3>
-        <p>I’m an experienced full-stack software engineer and self-directed owner, with a passion for delivering beautiful, intuitive user experiences.</p>
-        <p>Having worked at both large, established corporations and small, early-stage startups, I've experienced a variety of engineering cultures and environments. Through this, I’ve developed the perspective and skills necessary to effectively communicate and collaborate cross-functionally.</p>
-        <p>I’ve started, contributed to, shipped and maintained projects and products across the spectrum: from monolithic Rails apps to large-scale, service-oriented architectures.</p>
+        <p>
+          I’m an experienced full-stack software engineer and self-directed
+          owner, with a passion for delivering beautiful, intuitive user
+          experiences.
+        </p>
+        <p>
+          Having worked at both large, established companies and small,
+          early-stage startups, I've experienced a variety of engineering
+          cultures and environments. Through this, I’ve developed the
+          perspective and skills necessary to effectively communicate and
+          collaborate cross-functionally.
+        </p>
       </section>
       <section className="section">
         <h3 className="h3">Work Experience</h3>
         <ol className="workList">
           <li className="workListItem">
             <span className="workRowCompanyName">Dropbox&nbsp;&nbsp;</span>
-            <span className="workRowTitle">/&nbsp;&nbsp;Engineer &amp; Tech Lead</span>
+            <span className="workRowTitle">
+              /&nbsp;&nbsp;Design Systems Engineer &amp; Tech Lead
+            </span>
             <span className="workRowDate">Mar 2017 - Present</span>
           </li>
           <li className="workListItem">
@@ -48,13 +88,17 @@ export default () => {
             <span className="workRowDate">Jan 2015 - Mar 2017</span>
           </li>
           <li className="workListItem">
-            <span className="workRowCompanyName">RAD Development&nbsp;&nbsp;</span>
+            <span className="workRowCompanyName">
+              RAD Development&nbsp;&nbsp;
+            </span>
             <span className="workRowTitle">/&nbsp;&nbsp;Co-Founder & CTO</span>
             <span className="workRowDate">May 2012 - Jan 2015</span>
           </li>
           <li className="workListItem">
             <span className="workRowCompanyName">Arkad&nbsp;&nbsp;</span>
-            <span className="workRowTitle">/&nbsp;&nbsp;Co-Founder & Lead Engineer</span>
+            <span className="workRowTitle">
+              /&nbsp;&nbsp;Co-Founder & Lead Engineer
+            </span>
             <span className="workRowDate">April 2012 - May 2013</span>
           </li>
           <li className="workListItem">
@@ -63,7 +107,9 @@ export default () => {
             <span className="workRowDate">May 2011 - May 2012</span>
           </li>
           <li className="workListItem">
-            <span className="workRowCompanyName">American Express&nbsp;&nbsp;</span>
+            <span className="workRowCompanyName">
+              American Express&nbsp;&nbsp;
+            </span>
             <span className="workRowTitle">/&nbsp;&nbsp;Technical Analyst</span>
             <span className="workRowDate">June 2010 - April 2011</span>
           </li>
@@ -76,13 +122,27 @@ export default () => {
             <span className="title">Software Engineer</span>
           </div>
           <ul className="links">
-            <li><a href="mailto:micah.roberson@gmail.com" target="_blank">Email</a></li>
-            <li><span>•</span></li>
-            <li><a href="https://github.com/micahroberson" target="_blank">GitHub</a></li>
-            <li><span>•</span></li>
-            <li><a href="https://twitter.com/micahroberson" target="_blank">Twitter</a></li>
-            <li><span>•</span></li>
-            <li><a href="/static/Micah Roberson Resume.pdf" target="_blank">Download Résumé</a></li>
+            <li>
+              <a href="mailto:micah.roberson@gmail.com" target="_blank">
+                Email
+              </a>
+            </li>
+            <li>
+              <span>•</span>
+            </li>
+            <li>
+              <a href="https://github.com/micahroberson" target="_blank">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <span>•</span>
+            </li>
+            <li>
+              <a href="/static/Micah Roberson Resume.pdf" target="_blank">
+                Download Résumé
+              </a>
+            </li>
           </ul>
         </section>
       </footer>
@@ -90,7 +150,8 @@ export default () => {
         body {
           margin: 0;
           padding: 0;
-          font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+            Helvetica, Arial, sans-serif;
           background-color: #111111;
           color: #ffffff;
           font-size: 16px;
@@ -111,7 +172,8 @@ export default () => {
           margin: 0 auto;
           padding: 274px 0 185px;
         }
-        .container > section:nth-child(1), .container > section:nth-child(3) {
+        .container > section:nth-child(1),
+        .container > section:nth-child(3) {
           margin-bottom: 154px;
         }
         .container > section:nth-child(2) {
@@ -246,7 +308,8 @@ export default () => {
             padding: 100px 0 100px;
           }
 
-          .container > section:nth-child(1), .container > section:nth-child(3) {
+          .container > section:nth-child(1),
+          .container > section:nth-child(3) {
             margin-bottom: 100px;
           }
 
@@ -283,7 +346,7 @@ export default () => {
           }
 
           .links > li > a:hover {
-            color: rgba(255, 255, 255, 1.0);
+            color: rgba(255, 255, 255, 1);
           }
 
           .workListItem {
@@ -296,5 +359,5 @@ export default () => {
         }
       `}</style>
     </div>
-  )
+  );
 };
