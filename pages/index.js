@@ -39,7 +39,7 @@ export default () => {
         <ol className="workList">
           <li className="workListItem">
             <span className="workRowCompanyName">Dropbox&nbsp;&nbsp;</span>
-            <span className="workRowTitle">/&nbsp;&nbsp;Technical Lead &amp; Software Engineer</span>
+            <span className="workRowTitle">/&nbsp;&nbsp;Engineer &amp; Tech Lead</span>
             <span className="workRowDate">Mar 2017 - Present</span>
           </li>
           <li className="workListItem">
