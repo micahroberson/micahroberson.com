@@ -78,7 +78,7 @@ export default () => {
           <li className="workListItem">
             <span className="workRowCompanyName">Dropbox&nbsp;&nbsp;</span>
             <span className="workRowTitle">
-              /&nbsp;&nbsp;Design Systems Engineer &amp; Tech Lead
+              /&nbsp;&nbsp;Senior Software Engineer &amp; Tech Lead
             </span>
             <span className="workRowDate">Mar 2017 - Present</span>
           </li>
