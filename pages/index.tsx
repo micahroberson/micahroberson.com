@@ -194,8 +194,7 @@ export default function Home() {
         body {
           margin: 0;
           padding: 0;
-          font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-            Helvetica, Arial, sans-serif;
+          font-family: inherit;
           background-color: var(--bg-primary);
           color: var(--text-primary);
           font-size: 16px;

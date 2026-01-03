@@ -1,5 +1,12 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import type { AppProps } from 'next/app';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
+});
 
 type Theme = 'dark' | 'light';
 
@@ -42,7 +49,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme, mounted }}>
-      <Component {...pageProps} />
+      <main className={inter.className}>
+        <Component {...pageProps} />
+      </main>
     </ThemeContext.Provider>
   );
 }
