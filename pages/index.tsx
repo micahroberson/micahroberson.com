@@ -32,10 +32,10 @@ export default function Home() {
         </button>
       )}
       <Head>
-        <title>Micah Roberson – Software Engineer</title>
+        <title>Micah Roberson – Engineering Manager</title>
         <meta
           property="og:title"
-          content="Micah Roberson – Software Engineer"
+          content="Micah Roberson – Engineering Manager"
         />
         <meta charSet="utf-8" />
         <link rel="shortcut icon" type="image/png" href="/static/favicon.png" />
@@ -46,11 +46,11 @@ export default function Home() {
         <meta name="author" content="Micah Roberson" />
         <meta
           name="description"
-          content="A software engineer in San Francisco, specializing in rich JavaScript applications."
+          content="A hands-on engineering manager in San Francisco, building AI-powered products and leading teams to deliver exceptional user experiences."
         />
         <meta
           property="og:description"
-          content="A software engineer in San Francisco, specializing in rich JavaScript applications."
+          content="A hands-on engineering manager in San Francisco, building AI-powered products and leading teams to deliver exceptional user experiences."
         />
         <link rel="canonical" href="https://micahroberson.com" />
         <meta property="og:url" content="https://micahroberson.com" />
@@ -58,8 +58,7 @@ export default function Home() {
       <section className="section">
         <h1 className="h1">Micah Roberson</h1>
         <h2 className="h2">
-          A software engineer in San Francisco, specializing in rich JavaScript
-          applications.
+        A hands-on engineering manager in San Francisco, building AI-powered products and leading teams to deliver exceptional user experiences.
         </h2>
         <ul className="links">
           <li>
@@ -88,31 +87,38 @@ export default function Home() {
       <section className="section">
         <h3 className="h3">About</h3>
         <p>
-          I'm an experienced full-stack software engineer and self-directed
-          owner, with a passion for delivering beautiful, intuitive user
-          experiences.
+          I'm a hands-on engineering manager who loves getting into the weeds.
+          I stay deeply technical and lead teams building AI-powered products
+          at Airtable, with a strong focus on user experience.
         </p>
         <p>
-          Having worked at both large, established companies and small,
-          early-stage startups, I've experienced a variety of engineering
-          cultures and environments. Through this, I've developed the
-          perspective and skills necessary to effectively communicate and
-          collaborate cross-functionally.
+          My approach combines product thinking with technical expertise—I
+          believe the best engineering leaders understand their craft
+          intimately. Having worked at both large companies and early-stage
+          startups, I bring the perspective to build great teams while staying
+          connected to the work itself.
         </p>
       </section>
       <section className="section">
         <h3 className="h3">Work Experience</h3>
         <ol className="workList">
+        <li className="workListItem">
+            <span className="workRowCompanyName">Airtable&nbsp;&nbsp;</span>
+            <span className="workRowTitle">
+              /&nbsp;&nbsp;Engineering Manager
+            </span>
+            <span className="workRowDate">Aug 2021 - Present</span>
+          </li>
           <li className="workListItem">
             <span className="workRowCompanyName">Dropbox&nbsp;&nbsp;</span>
             <span className="workRowTitle">
-              /&nbsp;&nbsp;Senior Software Engineer &amp; Tech Lead
+              /&nbsp;&nbsp;Software Engineer &amp; Tech Lead
             </span>
-            <span className="workRowDate">Mar 2017 - Present</span>
+            <span className="workRowDate">Mar 2017 - Aug 2021</span>
           </li>
           <li className="workListItem">
             <span className="workRowCompanyName">Delectable&nbsp;&nbsp;</span>
-            <span className="workRowTitle">/&nbsp;&nbsp;Lead Web Engineer</span>
+            <span className="workRowTitle">/&nbsp;&nbsp;Software Engineer &amp; Tech Lead</span>
             <span className="workRowDate">Jan 2015 - Mar 2017</span>
           </li>
           <li className="workListItem">
@@ -134,20 +140,13 @@ export default function Home() {
             <span className="workRowTitle">/&nbsp;&nbsp;Software Engineer</span>
             <span className="workRowDate">May 2011 - May 2012</span>
           </li>
-          <li className="workListItem">
-            <span className="workRowCompanyName">
-              American Express&nbsp;&nbsp;
-            </span>
-            <span className="workRowTitle">/&nbsp;&nbsp;Technical Analyst</span>
-            <span className="workRowDate">June 2010 - April 2011</span>
-          </li>
         </ol>
       </section>
       <footer className="footer">
         <section className="section">
           <div className="footerTitle">
             <span>Micah Roberson</span>
-            <span className="title">Software Engineer</span>
+            <span className="title">Engineering Manager</span>
           </div>
           <ul className="links">
             <li>
@@ -264,7 +263,6 @@ export default function Home() {
           font-size: 28px;
           font-weight: 400;
           line-height: 44px;
-          max-width: 600;
           margin: 0 0 42px;
         }
 
