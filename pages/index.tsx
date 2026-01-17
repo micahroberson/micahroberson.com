@@ -70,14 +70,6 @@ export default function Home() {
             <span>•</span>
           </li>
           <li>
-            <a href="https://github.com/micahroberson" target="_blank">
-              GitHub
-            </a>
-          </li>
-          <li>
-            <span>•</span>
-          </li>
-          <li>
             <a href="/static/Micah Roberson Resume.pdf" target="_blank">
               Download Résumé
             </a>
