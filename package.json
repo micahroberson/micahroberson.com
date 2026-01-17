@@ -8,16 +8,20 @@
     "url": "https://github.com/micahroberson/micahroberson.com"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "export": "next export -o dist",
     "start": "next start"
   },
   "author": "Micah Roberson",
   "license": "MIT",
   "dependencies": {
-    "next": "9.4.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "next": "^16.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "typescript": "^5.9.3"
   }
 }

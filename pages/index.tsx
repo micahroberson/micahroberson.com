@@ -1,13 +1,41 @@
 import Head from "next/head";
+import { useTheme } from "./_app";
 
-export default () => {
+export default function Home() {
+  const { theme, toggleTheme, mounted } = useTheme();
+
   return (
     <div className="container">
+      {mounted && (
+        <button
+          className="themeToggle"
+          onClick={toggleTheme}
+          aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+        >
+          {theme === 'dark' ? (
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+          ) : (
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          )}
+        </button>
+      )}
       <Head>
-        <title>Micah Roberson – Software Engineer</title>
+        <title>Micah Roberson – Engineering Manager</title>
         <meta
           property="og:title"
-          content="Micah Roberson – Software Engineer"
+          content="Micah Roberson – Engineering Manager"
         />
         <meta charSet="utf-8" />
         <link rel="shortcut icon" type="image/png" href="/static/favicon.png" />
@@ -18,11 +46,11 @@ export default () => {
         <meta name="author" content="Micah Roberson" />
         <meta
           name="description"
-          content="A software engineer in San Francisco, specializing in rich JavaScript applications."
+          content="A hands-on engineering manager in San Francisco, building AI-powered products and leading teams to deliver exceptional user experiences."
         />
         <meta
           property="og:description"
-          content="A software engineer in San Francisco, specializing in rich JavaScript applications."
+          content="A hands-on engineering manager in San Francisco, building AI-powered products and leading teams to deliver exceptional user experiences."
         />
         <link rel="canonical" href="https://micahroberson.com" />
         <meta property="og:url" content="https://micahroberson.com" />
@@ -30,8 +58,7 @@ export default () => {
       <section className="section">
         <h1 className="h1">Micah Roberson</h1>
         <h2 className="h2">
-          A software engineer in San Francisco, specializing in rich JavaScript
-          applications.
+        A hands-on engineering manager in San Francisco, building AI-powered products and leading teams to deliver exceptional user experiences.
         </h2>
         <ul className="links">
           <li>
@@ -60,31 +87,38 @@ export default () => {
       <section className="section">
         <h3 className="h3">About</h3>
         <p>
-          I’m an experienced full-stack software engineer and self-directed
-          owner, with a passion for delivering beautiful, intuitive user
-          experiences.
+          I'm a hands-on engineering manager who loves getting into the weeds.
+          I stay deeply technical and lead teams building AI-powered products
+          at Airtable, with a strong focus on user experience.
         </p>
         <p>
-          Having worked at both large, established companies and small,
-          early-stage startups, I've experienced a variety of engineering
-          cultures and environments. Through this, I’ve developed the
-          perspective and skills necessary to effectively communicate and
-          collaborate cross-functionally.
+          My approach combines product thinking with technical expertise—I
+          believe the best engineering leaders understand their craft
+          intimately. Having worked at both large companies and early-stage
+          startups, I bring the perspective to build great teams while staying
+          connected to the work itself.
         </p>
       </section>
       <section className="section">
         <h3 className="h3">Work Experience</h3>
         <ol className="workList">
+        <li className="workListItem">
+            <span className="workRowCompanyName">Airtable&nbsp;&nbsp;</span>
+            <span className="workRowTitle">
+              /&nbsp;&nbsp;Engineering Manager
+            </span>
+            <span className="workRowDate">Aug 2021 - Present</span>
+          </li>
           <li className="workListItem">
             <span className="workRowCompanyName">Dropbox&nbsp;&nbsp;</span>
             <span className="workRowTitle">
-              /&nbsp;&nbsp;Senior Software Engineer &amp; Tech Lead
+              /&nbsp;&nbsp;Software Engineer &amp; Tech Lead
             </span>
-            <span className="workRowDate">Mar 2017 - Present</span>
+            <span className="workRowDate">Mar 2017 - Aug 2021</span>
           </li>
           <li className="workListItem">
             <span className="workRowCompanyName">Delectable&nbsp;&nbsp;</span>
-            <span className="workRowTitle">/&nbsp;&nbsp;Lead Web Engineer</span>
+            <span className="workRowTitle">/&nbsp;&nbsp;Software Engineer &amp; Tech Lead</span>
             <span className="workRowDate">Jan 2015 - Mar 2017</span>
           </li>
           <li className="workListItem">
@@ -106,20 +140,13 @@ export default () => {
             <span className="workRowTitle">/&nbsp;&nbsp;Software Engineer</span>
             <span className="workRowDate">May 2011 - May 2012</span>
           </li>
-          <li className="workListItem">
-            <span className="workRowCompanyName">
-              American Express&nbsp;&nbsp;
-            </span>
-            <span className="workRowTitle">/&nbsp;&nbsp;Technical Analyst</span>
-            <span className="workRowDate">June 2010 - April 2011</span>
-          </li>
         </ol>
       </section>
       <footer className="footer">
         <section className="section">
           <div className="footerTitle">
             <span>Micah Roberson</span>
-            <span className="title">Software Engineer</span>
+            <span className="title">Engineering Manager</span>
           </div>
           <ul className="links">
             <li>
@@ -147,16 +174,33 @@ export default () => {
         </section>
       </footer>
       <style jsx global>{`
+        :root,
+        [data-theme="dark"] {
+          --bg-primary: #111111;
+          --text-primary: #ffffff;
+          --text-secondary: rgba(255, 255, 255, 0.7);
+          --text-muted: rgba(255, 255, 255, 0.4);
+          --border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        [data-theme="light"] {
+          --bg-primary: #ffffff;
+          --text-primary: #111111;
+          --text-secondary: rgba(0, 0, 0, 0.7);
+          --text-muted: rgba(0, 0, 0, 0.5);
+          --border-color: rgba(0, 0, 0, 0.12);
+        }
+
         body {
           margin: 0;
           padding: 0;
-          font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-            Helvetica, Arial, sans-serif;
-          background-color: #111111;
-          color: #ffffff;
+          font-family: inherit;
+          background-color: var(--bg-primary);
+          color: var(--text-primary);
           font-size: 16px;
           text-rendering: optimizeLegibility;
           -webkit-font-smoothing: antialiased;
+          transition: background-color 0.2s ease, color 0.2s ease;
         }
 
         p {
@@ -168,6 +212,28 @@ export default () => {
         }
       `}</style>
       <style jsx>{`
+        .themeToggle {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: transparent;
+          border: 1px solid var(--border-color);
+          border-radius: 8px;
+          padding: 8px;
+          cursor: pointer;
+          color: var(--text-secondary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: color 0.2s ease, border-color 0.2s ease;
+          z-index: 100;
+        }
+
+        .themeToggle:hover {
+          color: var(--text-primary);
+          border-color: var(--text-muted);
+        }
+
         .container {
           margin: 0 auto;
           padding: 274px 0 185px;
@@ -196,7 +262,6 @@ export default () => {
           font-size: 28px;
           font-weight: 400;
           line-height: 44px;
-          max-width: 600;
           margin: 0 0 42px;
         }
 
@@ -205,16 +270,16 @@ export default () => {
           line-height: 44px;
           letter-spacing: 2px;
           text-transform: uppercase;
-          color: rgba(255, 255, 255, 0.4);
+          color: var(--text-muted);
           margin: 0 0 21px;
           padding: 0 0 20px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+          border-bottom: 1px solid var(--border-color);
         }
 
         .footer {
           margin: 21px 0 0;
           padding: 61px 0 0;
-          border-top: 1px solid rgba(255, 255, 255, 0.12);
+          border-top: 1px solid var(--border-color);
         }
 
         .footer > section:after {
@@ -238,7 +303,7 @@ export default () => {
         }
 
         .title {
-          color: rgba(255, 255, 255, 0.4);
+          color: var(--text-muted);
         }
 
         .links {
@@ -253,13 +318,13 @@ export default () => {
 
         .links > li > span {
           padding: 0 5px;
-          color: rgba(255, 255, 255, 0.7);
+          color: var(--text-secondary);
           font-size: 10px;
           vertical-align: bottom;
         }
 
         .links > li > a {
-          color: rgba(255, 255, 255, 0.7);
+          color: var(--text-secondary);
         }
         .workList {
           list-style: none;
@@ -271,7 +336,7 @@ export default () => {
           font-size: 20px;
           padding: 0 0 21px;
           margin-bottom: 21px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+          border-bottom: 1px solid var(--border-color);
         }
 
         .workListItem:last-child {
@@ -342,11 +407,11 @@ export default () => {
           }
 
           .links > li > a:active {
-            color: rgba(255, 255, 255, 0.7);
+            color: var(--text-secondary);
           }
 
           .links > li > a:hover {
-            color: rgba(255, 255, 255, 1);
+            color: var(--text-primary);
           }
 
           .workListItem {
@@ -360,4 +425,4 @@ export default () => {
       `}</style>
     </div>
   );
-};
+}
